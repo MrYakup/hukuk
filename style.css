@@ -1,30 +1,26 @@
 *,html,body{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 #kapsayıcı{
     display: flex;
     flex-direction: row;
     height: 100vh;
 }
+
 #resim{
     width: 50vw;
     height: 100%;
-}
-#resim{
     object-fit: cover;
     object-position: center;
 }
 
 #sag{
-    width: 100vh;
     display: flex;
     flex-direction: column;
 }
 #sagust{
-    padding-top: 40px;
-    width: 100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -44,13 +40,14 @@
 
 #buroadiust{
     font-size: 46px;
+    color: #064066;
 }
 
 #buroadialt{
     font-size: 36px;
     padding-top: 10px;
     font-weight: 400;
-    
+    color: #A38776;
 }
 
 #sagalt{
@@ -61,17 +58,14 @@
     gap: 50px;
     height: 100%;
 }
-#iletisim{
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif ;
-}
+
 #ofisiletisim{
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding-left: 80px;
     padding-right: 80px;
-    
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 #iletisimitem1{
@@ -88,6 +82,63 @@
 }
 
 .foto{
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
 }
+
+@media screen and (max-width: 600px) {
+    #kapsayıcı {
+      flex-direction: column-reverse;
+      width: 100%;
+      height: auto;
+      position: relative;
+      justify-content: space-between;
+      
+    }
+    #buroadiust{
+        font-size: 26px;
+        color: #064066;
+    }
+    
+    #buroadialt{
+        font-size: 36px;
+        padding-top: 10px;
+        font-weight: 400;
+        color: #A38776;
+    }
+    #ofisiletisim{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+        justify-content:center;
+        gap: 10px;
+        font-family: Arial, Helvetica, sans-serif ;
+        padding-bottom: 10px;
+    }
+    
+    #iletisimitem1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    #iletisimitem2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+
+    #resim{
+        width: 100vw;
+        height: 50vh;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.8;
+    }
+    #copyright{
+        position: absolute;
+        bottom: 6px;
+        color: white;
+    }
+  }
