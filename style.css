@@ -89,7 +89,6 @@
 @media screen and (max-width: 600px) {
     #kapsayıcı {
       flex-direction: column-reverse;
-      width: 100%;
       height: auto;
       position: relative;
       justify-content: space-between;
