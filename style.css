@@ -6,7 +6,6 @@
 
 #kapsayıcı{
     display: flex;
-    flex-direction: row;
     height: 100vh;
 }
 
@@ -20,6 +19,7 @@
 #sag{
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #sagust{
@@ -38,7 +38,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 
 #buroadiust{
@@ -58,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 14px;
+    gap: 10px;
     height: 100%;
 }
 
@@ -83,6 +83,10 @@
     align-items: center;
     gap: 5px;
 }
+.foto{
+    width: 70px;
+    height: 70px;
+}
 
 #contact{
     display: flex;
@@ -94,18 +98,18 @@
     overflow: hidden;
     align-self: flex-end;
     margin-right: 40px;
+    margin-bottom: 40px;
 }
 
 #contact p {
     width: 100%;
     background-color: #f1f3f4;
     color: #5f7783;
-    padding: 6px;
 }
 
-.foto{
-    width: 70px;
-    height: 70px;
+#copyright{
+    position: absolute;
+    bottom: 6px;
 }
 
 @media screen and (max-width: 600px) {
@@ -171,9 +175,11 @@
         object-position: center;
         opacity: 0.8;
     }
+
     #copyright{
         position: absolute;
         bottom: 6px;
         color: white;
     }
+
   }
