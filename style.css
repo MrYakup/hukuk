@@ -58,7 +58,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 50px;
+    gap: 20px;
     height: 100%;
 }
 
@@ -82,6 +82,21 @@
     flex-direction: column;
     align-items: center;
     gap: 5px;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+#contact p {
+    width: 98%;
+    background-color: #f1f3f4;
+    color: #5f7783;
 }
 
 .foto{
