@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 #kapsayıcı{
     display: flex;
     flex-direction: row;
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: column;
 }
+
 #sagust{
     display: flex;
     flex-direction: column;
@@ -30,6 +32,7 @@
     width: 30%;
     height: auto;
 }
+
 #buroadi{
     display: flex;
     flex-direction: column;
@@ -87,6 +90,7 @@
 }
 
 @media screen and (max-width: 600px) {
+    
     #kapsayıcı {
       flex-direction: column-reverse;
       height: auto;
