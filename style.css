@@ -62,6 +62,11 @@
     height: 100%;
 }
 
+.iletisim{
+    text-decoration: none;
+    color:black;
+}
+
 #ofisiletisim{
     display: flex;
     justify-content: space-between;
